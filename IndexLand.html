@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Add custom styles here if needed */
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="bg-blue-600 text-white">
+    <nav class="container mx-auto flex justify-between items-center py-4">
+      <div class="text-2xl font-bold">Travel Agency</div>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+        <li><a href="#destinations" class="hover:text-blue-300">Destinations</a></li>
+        <li><a href="#tours" class="hover:text-blue-300">Tours</a></li>
+        <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-cover bg-center" style="background-image: url('C:/Users/ISSAM/Downloads/GLOBE.JFIF');">
+    <div class="h-full flex flex-col items-center justify-center text-white text-center">
+      <h1 class="text-4xl font-bold">Explore the World</h1>
+      <p class="text-xl mt-4">Your next adventure awaits</p>
+      <a href="#destinations" class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-800 rounded text-lg">Discover Now</a>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Top Destinations</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded shadow">
+          <img src="C:/Users/ISSAM/Downloads/MEXICO.JFIF" alt="MEXICO" class="rounded-t">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">MEXICO</h3>
+            <p class="mt-2 text-gray-700">Mexico, officially the United Mexican States, is a country in North America. It borders the United States to the north, and Guatemala and Belize to the southeast; while having maritime boundaries with the Pacific Ocean to the west, the Caribbean Sea to the southeast, and the Gulf of Mexico to the east.</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Learn More</a>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow">
+          <img src="C:/Users/ISSAM/Downloads/MALIZIA.JFIF" alt="Malaysia" class="rounded-t">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Malaysia</h3>
+            <p class="mt-2 text-gray-700">Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers.</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Learn More</a>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow">
+          <img src="C:/Users/ISSAM/Downloads/rio.JFIF" alt="rio" class="rounded-t">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Rio de Janeiro</h3>
+            <p class="mt-2 text-gray-700">Rio de Janeiro is a huge seaside city in Brazil, famed for its Copacabana and Ipanema beaches, 38m Christ the Redeemer statue atop Mount Corcovado and for Sugarloaf Mountain, a granite peak with cable cars to its summit. The city is also known for its sprawling favelas (shanty towns). Its raucous Carnaval festival, featuring parade floats, flamboyant costumes and samba dancers, is considered the world’s largest</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tours Section -->
+  <section id="tours" class="py-12">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Tours</h2>
+      <div class="space-y-4">
+        <div class="border rounded shadow">
+          <button class="w-full text-left p-4 font-bold bg-blue-600 text-white rounded-t">TURKEY Tour </button>
+          <div class="p-4">
+            <p class="text-gray-700">Turkey, officially the Republic of Türkiye, is a country mainly located in Anatolia in West Asia, with a relatively small part called East Thrace in Southeast Europe</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">View Details</a>
+          </div>
+        </div>
+        <div class="border rounded shadow">
+          <button class="w-full text-left p-4 font-bold bg-blue-600 text-white rounded-t">Russia Tour</button>
+          <div class="p-4">
+            <p class="text-gray-700">Russian Federation, is a country spanning Eastern Europe and North Asia. It is the largest country in the world, and extends across eleven time zones; sharing land borders with fourteen countries. Russia is the most populous country in Europe and the ninth-most populous country in the world</p>
+            <a href="#" class="text-blue-600 hover:underline mt-4 block">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+      <form class="max-w-lg mx-auto space-y-4">
+        <input type="text" placeholder="Name" class="w-full p-3 border rounded">
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded">
+        <input type="text" placeholder="Destination of Interest" class="w-full p-3 border rounded">
+        <textarea placeholder="Message" class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-800 rounded text-white">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+      <div class="mt-4 space-x-4">
+        <a href="https://www.facebook.com" class="hover:text-blue-300" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" class="hover:text-blue-300" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" class="hover:text-blue-300" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
